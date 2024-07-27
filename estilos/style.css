@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    height: 100%vw;
+}
+
+body, html{
+    color: white;
+    background: black url(../imagens/fundo.jpg) no-repeat center;
+    background-attachment: scroll;
+    background-size: cover;
+    display: block;
+    padding-top: 10px;
+}
+
+main{
+    background-color: white;
+    color: black;
+    height: 500px;
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+}
+
+main > input{
+    padding-bottom: 10px;
+} 
+
+footer > p{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
