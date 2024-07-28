@@ -9,17 +9,43 @@
 <body>
     <Main>
         <div id="lista">
-            <form action="nomes.php" method="get">
+            <form>
                 <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" minlength="3" maxlength="20" required><br>
+                <input type="text" name="nome" id="inome" minlength="3" maxlength="20" required placeholder="  Digite o nome">
+                <label for="icolor">Cor: </label>
+                <input type="color" name="cor" id="icor"><br>
                 <label for="iini">Iniciativa: </label>
-                <input type="number" name="ini" id="iini" minlength="1" required><br>
+                <input type="number" name="ini" id="iini" minlength="1" maxlength="2" size="2" required placeholder="  Valor"><br>
                 <input type="submit" value="Enviar" onclick="enviar()">
                 <input type="reset" value="Limpar">
             </form>
         </div>
+        <div id="teste">
+            <form>
+                <fieldset>
+                    <label for="isucesso">Sucesso</label>
+                    <input type="radio" name="sucesso" id="isucesso">
+                    <label for="isucesso2"></label>
+                    <input type="radio" name="sucesso2" id="isucesso2">
+                    <label for="isucesso3"></label>
+                    <input type="radio" name="sucesso3" id="isucesso3"><br>
+                    <label for="ifalha">Falha</label>
+                    <input type="radio" name="falha" id="ifalha">
+                    <label for="ifalha2"></label>
+                    <input type="radio" name="falha2" id="ifalha2">
+                    <label for="ifalha3"></label>
+                    <input type="radio" name="falha3" id="ifalha3"><br>
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        </div>
         <div id="resultado">
+            <fieldset>
 
+            </fieldset>
+            <form>
+                <input type="reset" value="Limpar" onclick="limpar()">
+            </form>
         </div>
     </Main>
     <footer>
