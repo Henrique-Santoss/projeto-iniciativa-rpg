@@ -2,15 +2,21 @@
 
 /* Configurações Gerais */
 
+:root{
+    --cor01: #BA1B1D; /* Cornell Red */
+    --cor02: #F24333; /* Vermillion */
+    --cor03: #564D4A; /* Walnut Brown */
+    --cor04: #F7F4F3; /* White Smoke */
+}
 
-*{
+*{ 
     margin: 0px;
     padding: 0px;
     height: 100%vw;
 }
 
 body, html{
-    color: white;
+    color: var(--cor04);
     background: black url(../imagens/fundo.jpg) no-repeat center;
     background-attachment: scroll;
     background-size: cover;
@@ -21,28 +27,24 @@ body, html{
     padding-top: 10px;
 }
 
+body > div#botao:hover{
+    background-color: var(--cor01);
+}
+
 main{
     background-size: cover;
-    background-color: white;
+    background-color: var(--cor04);
     color: black;
-    height: 500px;
+    display: block;
+    height: 400px;
     margin: auto;
     padding: 10px;
     width: 350px;
 }
 
-main > input{
-    display: block;
-    padding-bottom: 10px;
-} 
-
-main > div#teste{
-    padding: 10px;
-    margin: 10px;
-}
-
 main > div#resultado{
-    padding-top: 100px;
+    padding-top: 20px;
+    text-align: center;
 }
 
 main > div#resultado > fieldset{
@@ -53,7 +55,33 @@ main > div#resultado > fieldset{
 
 main > div#resultado > form{
     padding: 10px;
+}
+
+main > aside > legend{
     text-align: center;
+}
+
+aside{
+    background-color: var(--cor04);
+    margin: auto;
+    width: 370px;
+}
+
+aside > div#teste{
+    background: var(--cor04);
+    color: black;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+}
+
+aside > div#teste > form{
+    text-align: center;
+    padding: 10px;
+}
+
+aside > div#teste > form > input{
+    margin-top: 10px;
 }
 
 footer{

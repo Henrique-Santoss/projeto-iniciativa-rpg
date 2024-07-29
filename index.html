@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciativa</title>
+    <title>Iniciativa e Sobrevivência</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
 </head>
 <body>
@@ -16,13 +16,24 @@
                 <input type="color" name="cor" id="icor"><br>
                 <label for="iini">Iniciativa: </label>
                 <input type="number" name="ini" id="iini" minlength="1" maxlength="2" size="2" required placeholder="  Valor"><br>
-                <input type="submit" value="Enviar" onclick="enviar()">
-                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar" onclick="enviar()" class="botao">
+                <input type="reset" value="Limpar" class="botao">
             </form>
         </div>
+        <div id="resultado">
+            <fieldset>
+                <legend>Lista de Personagens</legend>
+            </fieldset>
+            <form>
+                <input type="reset" value="Limpar" onclick="limpar()"class="botao">
+            </form>
+        </div>
+    </Main>
+    <aside>
         <div id="teste">
             <form>
                 <fieldset>
+                    <legend>Teste de Sobreviência</legend>
                     <label for="isucesso">Sucesso</label>
                     <input type="radio" name="sucesso" id="isucesso">
                     <label for="isucesso2"></label>
@@ -35,19 +46,11 @@
                     <input type="radio" name="falha2" id="ifalha2">
                     <label for="ifalha3"></label>
                     <input type="radio" name="falha3" id="ifalha3"><br>
-                    <input type="reset" value="Limpar">
                 </fieldset>
+                <input type="reset" value="Limpar"class="botao">
             </form>
         </div>
-        <div id="resultado">
-            <fieldset>
-
-            </fieldset>
-            <form>
-                <input type="reset" value="Limpar" onclick="limpar()">
-            </form>
-        </div>
-    </Main>
+    </aside>
     <footer>
         <p>Site desenvolvido e criado por <strong><a href="https://github.com/Henrique-Santoss">Henrique-Santoss</a></strong></p>
     </footer>
