@@ -8,24 +8,25 @@
 </head>
 <body>
     <Main>
+        <h1>Teste de Iniciativa</h1>
         <div id="lista">
-            <form>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" minlength="3" maxlength="20" required placeholder="  Digite o nome">
-                <label for="icolor">Cor: </label>
+            <form autocomplete="on">
+                <label for="inome"><strong>Nome: </strong></label>
+                <input type="text" name="nome" id="inome" minlength="3" maxlength="20" required placeholder="  Digite o nome" autocomplete="name" class="botao">
+                <label for="icor"><strong>Cor: </strong></label>
                 <input type="color" name="cor" id="icor"><br>
-                <label for="iini">Iniciativa: </label>
-                <input type="number" name="ini" id="iini" minlength="1" maxlength="2" size="2" required placeholder="  Valor"><br>
+                <label for="iini"><strong>Iniciativa: </strong></label>
+                <input type="number" name="ini" id="iini" min="1" max="20" required placeholder=" Valor" class="botao"><br>
                 <input type="submit" value="Enviar" onclick="enviar()" class="botao">
                 <input type="reset" value="Limpar" class="botao">
             </form>
         </div>
         <div id="resultado">
             <fieldset>
-                <legend>Lista de Personagens</legend>
+                <legend><strong>Lista de Personagens</strong></legend>
             </fieldset>
             <form>
-                <input type="reset" value="Limpar" onclick="limpar()"class="botao">
+                <input type="reset" value="Limpar" onclick="limpar()" class="botao">
             </form>
         </div>
     </Main>
@@ -33,7 +34,7 @@
         <div id="teste">
             <form>
                 <fieldset>
-                    <legend>Teste de Sobreviência</legend>
+                    <legend><strong>Teste de Sobreviência</strong></legend>
                     <label for="isucesso">Sucesso</label>
                     <input type="radio" name="sucesso" id="isucesso">
                     <label for="isucesso2"></label>
@@ -47,12 +48,12 @@
                     <label for="ifalha3"></label>
                     <input type="radio" name="falha3" id="ifalha3"><br>
                 </fieldset>
-                <input type="reset" value="Limpar"class="botao">
+                <input type="reset" value="Limpar" class="botao">
             </form>
         </div>
     </aside>
     <footer>
-        <p>Site desenvolvido e criado por <strong><a href="https://github.com/Henrique-Santoss">Henrique-Santoss</a></strong></p>
+        <p>Site desenvolvido e criado por <a href="https://github.com/Henrique-Santoss" target="_blank"><strong>Henrique-Santoss</strong></a></p>
     </footer>
 </body>
 </html>
