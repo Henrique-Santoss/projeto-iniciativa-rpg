@@ -33,7 +33,7 @@ main{
     background-color: var(--cor04);
     color: black;
     display: block;
-    height: 500px;
+    height: 800px;
     margin: auto;
     padding: 10px;
     width: 350px;
@@ -44,19 +44,46 @@ main > h1{
     text-align: center;
 }
 
-main > div#resultado{
+main > div#personagens{
     padding-top: 20px;
     text-align: center;
 }
 
-main > div#resultado > fieldset{
+main > div#personagens > fieldset{
     display: block;
     height: 270px;
     width: 345px;
 }
 
-main > div#resultado > form{
+main > div#personagens > fieldset > select{
+    margin-top: 10px;
     padding: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+main > div#personagens > fieldset > select > option{
+    padding: 10px;
+}
+
+main > div#personagens > form{
+    padding: 10px;
+}
+
+main > div#ordem > fieldset{
+    display: block;
+    height: 270px;
+    width: 345px;
+}
+
+main > div#ordem > fieldset > legend{
+    text-align: center;
+}
+
+main > div#ordem > fieldset > output{
+    padding: 10px;
+    text-indent: 10px;
+    text-align: justify;
 }
 
 main > aside > legend{
